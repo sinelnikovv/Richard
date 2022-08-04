@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "variables";
+@import "typography";
+
+body {
+  background: var(--bg-primary);
+}
+
+.container {
+  @media screen and (min-width: 1320px) {
+    max-width: 1295px;
+  }
+}
+
+.navbar {
+  background: var(--gradient-header);
+  padding: 30px 0;
+}
+
+.nav-link {
+  color: #fff;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.header {
+  background: var(--gradient-header);
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: 992px) {
+    padding: 280px 0;
+  }
+
+  h1,
+  h2 {
+    color: #fff;
+  }
+
+  &_image {
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.btn {
+  &_main {
+    padding: 20px 40px;
+    background: var(--primary);
+    border-radius: 3px;
+    color: var(--secondary-text-color);
+
+    &:hover {
+      color: var(--secondary-text-color);
+      background: var(--primary-dark);
+      border-color: var(--primary);
+    }
+  }
+}
+
+.arrow_down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  height: 40px;
+  transform: translateX(-50%);
+}
+
+#counters {
+  .counter {
+    font-size: 59px;
+    font-weight: 400;
+  }
+}

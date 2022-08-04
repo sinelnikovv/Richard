@@ -1,0 +1,70 @@
+html {
+  font-size: 12px;
+  @media screen and (min-width: 365px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+@mixin font(
+  $fz,
+  $fz-tablet,
+  $fz-desktop,
+  $lh,
+  $lh-tablet,
+  $lh-desktop,
+  $fw,
+  $fw-tablet,
+  $fw-desktop
+) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  @media screen and (min-width: 768px) {
+    font-size: $fz-tablet;
+    line-height: $lh-tablet;
+    font-weight: $fw-tablet;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: $fz-desktop;
+    line-height: $lh-desktop;
+    font-weight: $fw-desktop;
+  }
+}
+
+* {
+  font-family: $font;
+  color: var(--primary-text-color);
+}
+
+.h1,
+h1 {
+  @include font(60px, 70px, 80px, 1, 1, 1, 400, 400, 400);
+}
+
+.h2,
+h2 {
+  @include font(26px, 28px, 30px, 1.46, 1.46, 1.46, 400, 400, 400);
+}
+
+.h3,
+h3 {
+  @include font(28px, 32px, 38px, 1.26, 1.26, 1.26, 400, 400, 400);
+}
+
+.h4,
+h4 {
+  @include font(14px, 16px, 18px, 1.33, 1.33, 1.33, 700, 700, 700);
+}
+
+.h5,
+h5 {
+  @include font(14px, 16px, 18px, 1.33, 1.33, 1.33, 700, 700, 700);
+}
+
+.h6,
+h6 {
+  @include font(10px, 12px, 12px, 1.67, 1.67, 1.67, 400, 400, 400);
+}

@@ -1,0 +1,91 @@
+//Roboto
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// colors
+body {
+  --primary: #fc0a7e;
+  --primary-dark: #cf0063;
+  --primary-border: #b04bb3;
+  --bg-primary: #fff;
+  --bg-secondary: #1b1b1b;
+  --gradient-header: linear-gradient(
+      287.15deg,
+      #450e4b 0%,
+      #3c0c41 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf0063;
+  --gradient-footer: linear-gradient(
+      276.18deg,
+      #6e28b1 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #fc0a7e;
+
+  --primary-text-color: #000;
+  --secondary-text-color: #fff;
+  --text-color: #6b6b6b;
+  --text-color-light: #a8a8a8;
+  --input-text: #1c1c1c;
+  --dots-color: #222222;
+}
+
+body.dark {
+  --primary: #fc0a7e;
+  --primary-dark: #cf0063;
+  --primary-border: #b04bb3;
+  --bg-primary: #1b1b1b;
+  --bg-secondary: #fff;
+  --gradient-header: linear-gradient(
+      287.15deg,
+      #450e4b 0%,
+      #3c0c41 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf0063;
+  --gradient-footer: linear-gradient(
+      276.18deg,
+      #6e28b1 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #fc0a7e;
+  --primary-text-color: #fff;
+  --secondary-text-color: #000;
+  --text-color: #6b6b6b;
+  --text-color-light: #a8a8a8;
+  --input-text: #1c1c1c;
+  --dots-color: #e5e5e5;
+}
+
+//font
+$font: "Gothic A1", system-ui, -apple-system, "Segoe UI", "Helvetica Neue",
+  Arial, sans-serif;
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
