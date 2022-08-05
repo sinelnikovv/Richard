@@ -1,9 +1,14 @@
+//dark theme button
+
 let btn = document.getElementById('theme');
 
 btn.addEventListener('click', function() {
     let body = document.querySelector('body');
     body.classList.toggle('dark');
 });
+
+//counters
+
 
 let numbers = document.querySelectorAll('.number');
 
