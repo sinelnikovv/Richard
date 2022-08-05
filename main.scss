@@ -19,25 +19,34 @@ body {
 
 .navbar {
   background: var(--gradient-header);
-  padding: 30px 0;
+  padding: 10px 0;
   transition: 0.3s;
+
+  @media screen and (min-width: 992px) {
+    padding: 30px 0;
+  }
+
+  &-brand {
+    padding: 0;
+  }
 }
 
 .nav-link {
   color: #fff;
   margin-left: 30px;
   text-align: center;
+  padding: 0;
 }
 
 .header {
   display: flex;
   align-items: center;
   background: var(--gradient-header);
-  // padding: 50px 0;
+  padding: 70px 0 0;
   position: relative;
   z-index: 1;
   @media screen and (min-width: 992px) {
-    // padding: 280px 0;
+    padding: 0;
     height: 100vh;
   }
 
@@ -82,8 +91,59 @@ body {
   transform: translateX(-50%);
 }
 
-#about {
+.about {
   height: 100vh;
+  padding-top: 100px;
+  background: #1b1b1b;
+
+  .container {
+    height: 100%;
+  }
+  &_text {
+    max-width: 610px;
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+    @media screen and (min-width: 992px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.header {
+  &_small {
+    color: var(--text-color-light);
+  }
+}
+
+.features {
+  &_row {
+    margin: 80px 0;
+  }
+  &_text {
+    max-width: 450px;
+  }
+  &_header {
+    margin: 25px 0 20px;
+  }
+  &_image {
+    width: 100%;
+    max-width: 510px;
+  }
+}
+
+.feature_card {
+  max-width: 370px;
+  &_image {
+  }
+
+  &_text {
+  }
+  &_header {
+    margin: 40px 0 18px;
+  }
+  &_p {
+  }
 }
 
 #counters {

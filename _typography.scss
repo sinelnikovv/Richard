@@ -37,6 +37,14 @@ html {
 * {
   font-family: $font;
   color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+p,
+.p {
+  @include font(14px, 14px, 16px, 1.88, 1.88, 1.88, 400, 400, 400);
+  color: var(--text-color);
 }
 
 .h1,
@@ -66,5 +74,5 @@ h5 {
 
 .h6,
 h6 {
-  @include font(10px, 12px, 12px, 1.67, 1.67, 1.67, 400, 400, 400);
+  @include font(12px, 12px, 12px, 1.67, 1.67, 1.67, 400, 400, 400);
 }

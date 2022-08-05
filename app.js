@@ -37,7 +37,16 @@ for (let num of numbers) {
   }else {
     interval(max, num, 100);
   }
-  
 
-    
+
 }
+
+
+//fullpage
+
+// new fullpage('#fullpage', {
+// 	//options here
+// 	autoScrolling:true,
+//   scrollHorizontally: true,
+//   scrollBar: true,
+// });

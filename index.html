@@ -7,90 +7,188 @@
   <title>Richard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+  <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.css" />
     <link rel="stylesheet" href="main.css">
     
     <link rel="icon" type="image/x-icon" href="img/logo_round.png">
 </head>
 
-<body>
-
+<body> 
   
- 
-    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Richard logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How to Use</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Download</a>
-            </li>
-            <li class="nav-item"><label class="nav-link" for="theme">Dark mode <input type="checkbox" id="theme"></label>
-            </li>
-          </ul>
-    
-        </div>
-      </div>
-    </nav>
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 ">
-            <h1 class="text-center text-lg-start">Momentum</h1>
-            <h2 class="text-center text-lg-start">Launch your product — and savor the momentum.</h2>
-            <button class="btn btn_main d-block mx-auto mx-lg-0">Get the App</button>
-          </div>
-          <div class="col-12 d-flex"><img class="header_image d-block mx-auto mt-5 mt-lg-0" src="img/header.png" alt=""></div>
-    
-        </div>
-    
-      </div>
-      <a href="#about"><img class="arrow_down" src="img/arrow-down.svg" alt=""></a>
-    </header>
-    <section id="about" class=""></section>
-
-    <section id="counters">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
-            <div class="counter">+<span class="number">12</span>k</div>
-            <p class="h4">Nibh Elit Tristique</p>
-          </div>
-    
-          <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
-            <div class="counter">+<span class="number">84</span></div>
-            <p class="h4">Nibh Elit Tristique</p>
-          </div>
-    
-          <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
-            <div class="counter">+<span class="number">3,07</span></div>
-            <p class="h4">Nibh Elit Tristique</p>
-          </div>
-    
-          <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
-            <div class="counter">+<span class="number">24</span>h</div>
-            <p class="h4">Nibh Elit Tristique</p>
-          </div>
-    
-    
-        </div>
-      </div>
-    </section>
-
+  <nav class="navbar fixed-top navbar-expand-lg  navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Richard logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">How to Use</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Download</a>
+                </li>
+                <li class="nav-item"><label class="nav-link" for="theme">Dark mode <input type="checkbox" id="theme"></label>
+                </li>
+              </ul>
   
+            </div>
+          </div>
+  </nav>
+      
+        
+        <header class="header">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 ">
+                <h1 class="text-center text-lg-start">Momentum</h1>
+                <h2 class="text-center text-lg-start">Launch your product — and savor the momentum.</h2>
+                <button class="btn btn_main d-block mx-auto mx-lg-0">Get the App</button>
+              </div>
+              <div class="col-12 d-flex"><img class="header_image d-block mx-auto mt-5 mt-lg-0" src="img/header.png" alt=""></div>
+  
+            </div>
+  
+          </div>
+          <a href="#about"><img class="arrow_down" src="img/arrow-down.svg" alt=""></a>
+        </header>
+      
+      <section id="about" class="about">
+
+        <div class="container d-flex flex-column justify-content-between">
+          <div class="about_text mx-auto">
+            <h6 class="header_small">Aenean Consectetur Porta</h6>
+            <h3 class="features_header">Nullam quis risus eget urna mollis ornare vel eu leo.</h3>
+          </div>
+          <div class="about_img"><img class="w-100" src="img/main.png" alt=""></div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+
+          <div class="row features_row">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+              <div class="features_text mx-auto">
+                <h6 class="header_small">Aenean Consectetur</h6>
+                <h3 class="features_header">Cay sociis nato que penatibus et</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              </div>           
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <img class="features_image" src="img/app.png" alt="">
+            </div>
+          </div>
+
+          <div class="row features_row">
+            
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+              <div class="features_text mx-auto">
+                <h6 class="header_small">ConsectUltricies</h6>
+                <h3 class="features_header">Amet Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </div>
+            </div>  
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-lg-first">
+              <img class="features_image" src="img/app2.png" alt="">
+            </div>
+          </div>
+
+          <div class="row features_row">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+              <div class="features_text mx-auto">
+                <h6 class="header_small">Aenean Consectetur Porta</h6>
+                <h3 class="features_header">Magna Porta Sit Bibendum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <img class="features_image" src="img/app3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-md-4">
+              <div class="feature_card d-flex flex-column align-items-center mx-auto">
+                <div class="feature_card_image"><img src="img/feature1.png" alt=""></div>
+                <div class="feature_card_text">
+                  <h4 class="feature_card_header text-center">Activity Notifications</h4>                  
+                  <p class="feature_card_p text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature_card d-flex flex-column align-items-center mx-auto">
+              <div class="feature_card_image"><img src="img/feature2.png" alt=""></div>
+              <div class="feature_card_text">
+                <h4 class="feature_card_header text-center">Custom Timing</h4>
+                <p class="feature_card_p text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature_card d-flex flex-column align-items-center mx-auto">
+              <div class="feature_card_image"><img src="img/feature3.png" alt=""></div>
+              <div class="feature_card_text">
+                <h4 class="feature_card_header text-center">Mobile Optimized</h4>
+                <p class="feature_card_p text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
+  
+    
+        <section id="counters">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+                <div class="counter">+<span class="number">12</span>k</div>
+                <p class="h4">Nibh Elit Tristique</p>
+              </div>
+    
+              <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+                <div class="counter">+<span class="number">84</span></div>
+                <p class="h4">Nibh Elit Tristique</p>
+              </div>
+    
+              <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+                <div class="counter">+<span class="number">3,07</span></div>
+                <p class="h4">Nibh Elit Tristique</p>
+              </div>
+    
+              <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+                <div class="counter">+<span class="number">24</span>h</div>
+                <p class="h4">Nibh Elit Tristique</p>
+              </div>
+    
+    
+            </div>
+          </div>
+        </section>
+    
+  
+  
+
 
 
   <!-- <button id="theme"></button> -->
@@ -98,8 +196,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>    
+    crossorigin="anonymous"></script>  
+    <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>  
     <script src="app.js"></script>
+
     <script src="scroll.js"></script>
 </body>
 
