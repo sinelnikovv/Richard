@@ -386,7 +386,7 @@ body {
 }
 
 .features_row {
-  margin: 80px 0;
+  margin: 80px 0 160px;
 }
 .features_text {
   max-width: 450px;
@@ -399,6 +399,10 @@ body {
   max-width: 510px;
 }
 
+.features_cards {
+  margin: 0px 0 160px;
+}
+
 .feature_card {
   max-width: 370px;
 }
@@ -406,9 +410,69 @@ body {
   margin: 40px 0 18px;
 }
 #counters {
-  height: 100vh;
+  margin: 0px 0 160px;
 }
 #counters .counter {
   font-size: 59px;
   font-weight: 400;
+}
+
+.how-to-use {
+  margin: 0px 0 160px;
+}
+.how-to-use_row {
+  margin: 80px 0 160px;
+}
+@media screen and (min-width: 992px) {
+  .how-to-use_row {
+    margin: 80px 0 160px 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .how-to-use_text {
+    padding: 0 80px;
+  }
+}
+.how-to-use_image {
+  width: 100%;
+  max-width: 520px;
+}
+.how-to-use_header {
+  margin: 25px 0 20px;
+}
+
+.quote {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.slide {
+  padding-bottom: 110px;
+}
+.slide_text {
+  margin: 60px 0 18px;
+  font-size: 24px;
+  line-height: 40px;
+}
+.slide_src div {
+  color: var(--text-color);
+}
+.slide_src_hr {
+  width: 30px;
+  height: 1px;
+  background: #d3d3d3;
+  margin: 0 20px;
+}
+
+.splide__pagination__page {
+  border-radius: 0;
+  background: rgba(34, 34, 34, 0.4);
+}
+.splide__pagination__page.is-active {
+  background: #222;
+  transform: none;
+}
+
+.brands {
+  margin: 120px 0;
 }/*# sourceMappingURL=main.css.map */
