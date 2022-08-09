@@ -18,7 +18,8 @@ body {
 }
 
 .navbar {
-  background: var(--gradient-header);
+  background: var(--gradient-nav);
+  backdrop-filter: blur(10px);
   padding: 10px 0;
   transition: 0.3s;
 
@@ -301,4 +302,8 @@ body {
       margin: 0 15px;
     }
   }
+}
+
+.fp-watermark {
+  display: none;
 }

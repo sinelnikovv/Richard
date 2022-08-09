@@ -42,12 +42,14 @@ for (let num of numbers) {
     
     let numArr = num.textContent.split(",");
     
+    
     for (let n of numArr) {
       
       let max = n;
       n = 0;
-      console.log(n);
-      if (max< 20) {
+      
+      if (max < 20) {
+        console.log(max);
     numInterval(max, n,  400);
     
   } else if( max < 50) {
@@ -73,19 +75,18 @@ for (let num of numbers) {
   }}
 }
 
+
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+  scrollHorizontally: true,
+  scrollBar: true,
+  normalScrollElements: '#scrolloverflow'
+});
+
 //splidejs
 var splide = new Splide('.splide', {
   type: 'loop',
   arrows: false,
 } );
 splide.mount();
-
-
-//fullpage
-
-// new fullpage('#fullpage', {
-// 	//options here
-// 	autoScrolling:true,
-//   scrollHorizontally: true,
-//   scrollBar: true,
-// });

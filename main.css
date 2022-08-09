@@ -13,6 +13,13 @@ body {
       rgba(207, 0, 99, 0) 100%
     ),
     #cf0063;
+  --gradient-nav: linear-gradient(
+      287.15deg,
+      #450e4b50 0%,
+      #3c0c4150 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf006449;
   --gradient-footer: linear-gradient(
       276.18deg,
       #6e28b1 0%,
@@ -289,7 +296,9 @@ body {
 }
 
 .navbar {
-  background: var(--gradient-header);
+  background: var(--gradient-nav);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 10px 0;
   transition: 0.3s;
 }
@@ -561,4 +570,8 @@ body {
   .footer_link {
     margin: 0 15px;
   }
+}
+
+.fp-watermark {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
