@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
   <link rel="stylesheet" href="main.css">    
   <link rel="icon" type="image/x-icon" href="img/logo_round.png">
+  <script src="https://kit.fontawesome.com/2fa14e3763.js" crossorigin="anonymous"></script>
 </head>
 
 <body> 
   
-  <nav class="navbar sticky-top navbar-expand-lg  navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-lg  navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Richard logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
@@ -36,7 +37,10 @@
             <a class="nav-link" href="#download">Download</a>
           </li>
           <li class="nav-item">
-            <label class="nav-link" for="theme">Dark mode <input type="checkbox" id="theme"></label>
+            <label class="nav-link" for="theme"><i class="fa-solid fa-sun"></i> <label class="switch">
+  <input type="checkbox" id="theme">
+  <span class="slider round"></span>
+</label><i class="fa-solid fa-moon"></i></label>
           </li>
         </ul>
   
@@ -179,7 +183,7 @@
         </div>
       </section>
 
-      <section class="how-to-use">
+      <section id="how-to-use" class="how-to-use">
         <div class="container">
           <div class="row how-to-use_row justify-content-center align-items-center">
             <div class="col-12 col-xxl-5">
@@ -266,7 +270,7 @@
         </div>
       </section>
 
-      <section class="download">
+      <section class="download" id="download">
         <div class="container d-flex flex-column justify-content-center align-items-center">        
           <h3 class="download_header">Ready to get started?</h3>
           <div class="buttons d-flex flex-column flex-md-row justify-content-center">
