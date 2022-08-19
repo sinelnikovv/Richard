@@ -7,10 +7,32 @@ btn.addEventListener('click', function() {
     body.classList.toggle('dark');
 });
 
-//counters
+//splidejs
+var splide = new Splide('.splide', {
+  type: 'loop',
+  arrows: false,
+} );
+splide.mount();
 
 
-let numbers = document.querySelectorAll('.number');
+//onview
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+}
+
+const box = document.querySelector('#counters');
+
+document.addEventListener('scroll', function () {
+  if (isInViewport(box)) {
+    let numbers = document.querySelectorAll('.number');
 
 function interval(max, num, time) {
   return setInterval(function () {
@@ -74,19 +96,7 @@ for (let num of numbers) {
     interval(max, num, 100);
   }}
 }
-
-
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-  scrollHorizontally: true,
-  scrollBar: true,
-  normalScrollElements: '#scrolloverflow'
+  }
+}, {
+    passive: true
 });
-
-//splidejs
-var splide = new Splide('.splide', {
-  type: 'loop',
-  arrows: false,
-} );
-splide.mount();
