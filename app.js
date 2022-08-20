@@ -100,3 +100,28 @@ for (let num of numbers) {
 }, {
     passive: true
 });
+
+//fullpage scroll
+
+let fullpages = document.querySelectorAll(".fullpage");
+
+function fullpageScroll(e) {
+  let delta = e.deltaY;
+  let coords = this.getBoundingClientRect();
+  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+
+  if (delta > 0 && coords.top == 0) {
+    window.scrollBy(0, window.innerHeight);
+  } else if(delta < 0 && coords.top == 0){    
+    window.scrollBy(0, -window.innerHeight);
+  } else {
+    window.scrollBy(0, coords.top);
+  }
+
+}
+
+for (let fullpage of fullpages) {
+  fullpage.addEventListener("wheel", fullpageScroll);
+}
+
+
