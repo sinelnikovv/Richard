@@ -205,20 +205,14 @@ body {
 
 .feature_card {
   max-width: 370px;
-  &_image {
-  }
-
-  &_text {
-  }
   &_header {
     margin: 40px 0 18px;
-  }
-  &_p {
   }
 }
 
 #counters {
   margin: 0px 0 160px;
+
   .counter {
     font-size: 59px;
     font-weight: 400;
@@ -227,7 +221,6 @@ body {
 
 .how-to-use {
   padding-top: 20px;
-
   margin: 0px 0 160px;
 
   &_row {
